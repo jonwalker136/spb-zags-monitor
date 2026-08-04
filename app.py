@@ -1,5 +1,8 @@
-from bot.telegram_bot import run_bot
+from monitor.checker import run_check_loop
+from config import CHECK_INTERVAL
 
 
 if __name__ == "__main__":
-    run_bot()
+    print("SPB ZAGS Monitor запущен")
+
+    run_check_loop(CHECK_INTERVAL)
